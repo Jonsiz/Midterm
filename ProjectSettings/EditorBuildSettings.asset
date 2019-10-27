@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/race-track-lake/race_track_lake.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: e838e6a0cbcbf50449660de5ec61f28a
+  - enabled: 1
+    path: Assets/Scenes/RaceLevel.unity
     guid: 2e1336748f3797f4798cf9e588e2620f
   m_configObjects: {}
