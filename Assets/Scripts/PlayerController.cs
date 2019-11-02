@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float speed = 40f;
+    [SerializeField] private float speed = 40f;
     private float turnSpeed = 65f;
     private float horizontalInput;
     private float fowardInput;
     public bool hasPowerup = false;
-    //private Rigidbody playerRb;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //playerRb = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
     void Update()
     {
         // Move the vehicle forward
@@ -30,7 +21,6 @@ public class PlayerController : MonoBehaviour
 
         //Moving Foward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * fowardInput);
-        //playerRb.AddForce(transform.forward * fowardInput * speed);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,6 +37,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator PowerupCountdownRoutine()
     {
         yield return new WaitForSeconds(7);
+        speed -= 20f;
         hasPowerup = false;
     }
 }

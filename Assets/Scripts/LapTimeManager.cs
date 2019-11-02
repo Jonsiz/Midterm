@@ -21,12 +21,14 @@ public class LapTimeManager : MonoBehaviour
         MilliDisplay = MilliCount.ToString("F0");
         MilliBox.GetComponent<Text>().text = "" + MilliDisplay;
 
+        //Counts Miliseconds in delta-time, adds a +1 to seconds, upon reaching 11.
         if (MilliCount >= 10)
         {
             MilliCount = 0;
             SecondCount += 1;
         }
 
+        //Counts seconds, upon reach 9, sets itself to 0, then adds a 1 to the next digit over, upon reaching 61seconds, adds a +1 to minutes and sets itseld to 0.
         if (SecondCount <= 9)
         {
             SecondBox.GetComponent<Text>().text = "0" + SecondCount + ".";
@@ -35,13 +37,13 @@ public class LapTimeManager : MonoBehaviour
         {
             SecondBox.GetComponent<Text>().text = "" + SecondCount + ".";
         }
-
         if (SecondCount >= 60)
         {
             SecondCount = 0;
             MinuteCount += 1;
         }
 
+        //Counts minutes, upon reaching 9, sets itself to 0 and adds a +1 to the next digit over.
         if (MinuteCount <= 9)
         {
             MinuteBox.GetComponent<Text>().text = "0" + MinuteCount + ":";

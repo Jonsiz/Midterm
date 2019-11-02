@@ -14,6 +14,8 @@ public class LapComplete : MonoBehaviour
 
     public GameObject LapTimeBox;
 
+
+    //On completion of the lap, writes everything to a "Best Time" Box.
     void OnTriggerEnter()
     {
         if (LapTimeManager.SecondCount <= 9)
@@ -35,12 +37,16 @@ public class LapComplete : MonoBehaviour
         }
 
 
+
+        //Sets the current time to 0 upon completion of the lap.
         MilliDisplay.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
 
         LapTimeManager.MinuteCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MilliCount = 0;
 
+
+        //Sets Lap trigger to false, and half-way trigger to true.
         HalfLapTrig.SetActive(true);
         LapCompleteTrig.SetActive(false);
 
