@@ -23,9 +23,10 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * fowardInput);
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Powerup_Speed"))
+        if (other.CompareTag("Powerup_Speed"))
         {
             hasPowerup = true;
             speed += 20f;
