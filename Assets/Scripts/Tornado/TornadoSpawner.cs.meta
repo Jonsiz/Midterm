@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d6e8b8bb0f5c14c40ab6c37bf396de41
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tornadoPrefab: {fileID: 778956586671168543, guid: 645cf85afc873f54885b3c015823a6d6,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

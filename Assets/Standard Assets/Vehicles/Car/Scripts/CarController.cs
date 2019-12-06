@@ -193,23 +193,7 @@ namespace UnityStandardAssets.Vehicles.Car
                     break;
             }
 
-            void OnTriggerEnter(Collider other)
-            {
-                if (other.CompareTag("Powerup_Speed"))
-                {
-                    hasPowerup = true;
-                    speed += 5f;
-                    Destroy(other.gameObject);
-                    StartCoroutine(PowerupCountdownRoutine());
-                }
-            }
-
-            IEnumerator PowerupCountdownRoutine()
-            {
-                yield return new WaitForSeconds(7);
-                speed -= 5f;
-                hasPowerup = false;
-            }
+            
         }
 
 

@@ -7,6 +7,7 @@ public class LapComplete : MonoBehaviour
 {
     public GameObject LapCompleteTrig;
     public GameObject HalfLapTrig;
+    public GameObject TornadoTriggerOn;
 
     public GameObject MinuteDisplay;
     public GameObject SecondDisplay;
@@ -48,6 +49,7 @@ public class LapComplete : MonoBehaviour
 
         //Sets Lap trigger to false, and half-way trigger to true.
         HalfLapTrig.SetActive(true);
+        TornadoTriggerOn.SetActive(true);
         LapCompleteTrig.SetActive(false);
 
     }

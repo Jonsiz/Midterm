@@ -2015,20 +2015,24 @@ MonoBehaviour:
 
     Ultimate Video Game Music
 
-    Universal Sound FX
-
     Zombie Cars and Weapons Pack
 
     Lake Race Track
 
     Kenny UI
 
+    Unity Standard Assets
+
 
     Special Credits:
 
     Jimmy Vegas
 
-    Unity Create With Code team'
+    Unity Create With Code team
+
+    Sharpcoderblog
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2056,8 +2060,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2097,12 +2101,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1223660586}
-    characterCount: 164
+    characterCount: 183
     spriteCount: 0
-    spaceCount: 27
-    wordCount: 27
+    spaceCount: 29
+    wordCount: 28
     linkCount: 0
-    lineCount: 10
+    lineCount: 11
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
